@@ -1,0 +1,26 @@
+{
+  "name": "grpc-connect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "1.6.0",
+    "@bufbuild/protoc-gen-es": "1.6.0",
+    "@connectrpc/connect": "1.2.1",
+    "@connectrpc/protoc-gen-connect-es": "^1.2.1",
+    "@connectrpc/connect-node": "^1.2.1",
+    "@connectrpc/connect-web": "^1.2.1",
+    "fastify": "^4.25.2",
+    "@connectrpc/connect-fastify": "^1.2.1",
+    "@grpc/grpc-js": "1.9.13",
+    "google-protobuf": "3.21.2",
+    "typescript": "5.3.3",
+    "ts-node-dev": "^2.0.0",
+    "esbuild": "^0.19.8"
+  },
+  "author": "",
+  "license": "ISC"
+}

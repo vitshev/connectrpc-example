@@ -1,0 +1,14 @@
+version: v1
+plugins:
+  - plugin: es
+    opt:
+      - target=ts
+      - import_extension=none
+    out: gen
+  - plugin: connect-es
+    #protoc_path: /Users/vitshev/pets/grpc-envoy/node_modules/.bin/protoc-gen-connect-es
+    opt:
+      # Add more plugin options here
+      - target=ts
+      - import_extension=none
+    out: gen

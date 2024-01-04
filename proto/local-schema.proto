@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package localschema;
+
+import "google/protobuf/empty.proto";
+
+service LocalAPI {
+  rpc say(google.protobuf.Empty) returns (SayResponse) {
+  }
+}
+
+message SayResponse {
+  string name = 1;
+  int64 age = 2;
+}

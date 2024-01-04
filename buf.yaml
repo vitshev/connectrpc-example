@@ -1,0 +1,34 @@
+version: v1beta1
+deps:
+  - buf.build/googleapis/googleapis:75c44112205d44183c3419d2c9cf4224e3c81d90
+build:
+  roots:
+    - ./proto/
+lint:
+  use:
+    - DEFAULT
+  except:
+    - ENUM_VALUE_PREFIX
+    - ENUM_ZERO_VALUE_SUFFIX
+    - PACKAGE_VERSION_SUFFIX
+    - SERVICE_SUFFIX # think
+    - RPC_REQUEST_STANDARD_NAME # think
+    - RPC_RESPONSE_STANDARD_NAME # think
+    - RPC_REQUEST_RESPONSE_UNIQUE # think
+    - FILE_LAYOUT # think
+#  ignore_only:
+#    FILE_LAYOUT:
+#
+#    PACKAGE_SAME_JAVA_MULTIPLE_FILES:
+#      - util
+#      - misc
+
+  ignore:
+    - extensions
+    - external
+
+breaking:
+  use:
+    - WIRE
+    - ENUM_VALUE_SAME_NAME
+    - PACKAGE_SERVICE_NO_DELETE
