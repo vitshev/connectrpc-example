@@ -1,6 +1,6 @@
 ```shell
   brew install buf
-  npm install @connectrpc/protoc-gen-connect-es -w
+  npm install @connectrpc/protoc-gen-connect-es -g
   make proto-gen
   make run -j 2
 ```
